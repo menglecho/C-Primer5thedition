@@ -1,0 +1,31 @@
+/* 
+ * File:   main.cpp
+ * Author: emeglig
+ *
+ * Created on den 6 augusti 2015, 14:11
+ */
+
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#include <cctype>
+
+using namespace std;
+
+
+/*
+ * 
+ */
+int main() {
+    const string hex = "0123456789ABCDEF";
+    cout << "Enter the numbers you like" << endl;
+    string result;
+    string::size_type n; // make sure n has enough space to store 
+    while(cin >> n)
+        if(n < hex.size())
+            result += hex[n];
+        else
+            result += "XXXXX";
+    cout << result << endl;
+    return 0;
+}
