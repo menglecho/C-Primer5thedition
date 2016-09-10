@@ -44,4 +44,6 @@ int main()
 	//string(const string & str, string size_type pos[0], size_type n = pos)
 	string seven(four, 7, 16);
 	cout << seven << " in motion!" << endl;
+
+	//cout << seven.length() << seven.size() << endl;
 }
